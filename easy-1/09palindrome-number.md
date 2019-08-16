@@ -1,6 +1,6 @@
-# 09Palindrome Number
+# 09. Palindrome Number
 
-Mycode
+### Mycode
 
 ```java
 class Solution {

@@ -2,7 +2,7 @@
 description: '["flower","flow","flip"]编写一个函数来查找字符串数组中最长的公共前缀字符串。空则返回“”'
 ---
 
-# 14Longest Common Prefix
+# 14. Longest Common Prefix
 
 ### Mycode
 

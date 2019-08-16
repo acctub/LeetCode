@@ -2,7 +2,7 @@
 description: '[2,7,13,19]寻找顺序数组中和为X的两个数，并且给出下标'
 ---
 
-# 01Two Sum
+# 01. Two Sum
 
 ### Two Sum I
 

@@ -2,7 +2,7 @@
 description: 整型反转
 ---
 
-# 07Reverse Interger
+# 07. Reverse Interger
 
 ### Solution
 
