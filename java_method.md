@@ -55,5 +55,32 @@ System.out.println(strB.append("ch").append("111").append('c'));
 https://www.cnblogs.com/songsongblue/p/9798651.html
 ```
 
+int  &gt; String
+
+```java
+int n = 5;
+String str = "";
+//way1
+str = n + "";//产生2个str对象
+//way2
+str = String.valueOf(n);//只产生一个对象
+```
+
+String &gt; int
+
+```java
+String str = "5";
+int i;
+//way1
+i = Integer.parseInt(str);//静态方法，不会产生多余的对象
+//!!如果str为空or""会报错!!
+//way2
+i = Integer.valueOf(str).intValue();//多产生一个对象
+
+Integer.valueOf("374");//是将字符串解析成Intger对象类型,返回的是Integer   
+Integer.parseInt("374");//是将字符串解析成int基本类型,返回的是int
+//整数值在 -128到127之间，解析的Integer是同一个对象，不再-128~127之间，数值相同，但地址不同。
+```
+
 
 
