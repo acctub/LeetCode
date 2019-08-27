@@ -1,3 +1,7 @@
+---
+description: 'https://github.com/neologd/mecab-ipadic-neologd/blob/master/README.ja.md'
+---
+
 # WindowsでNEologd辞書
 
 **１. Windows Subsystem for Linuxを有効にする**
@@ -12,8 +16,16 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-L
 
 ```text
 Microsoft StoreからUbuntuをインストール
+//リポジトリを日本のサーバーに切り替える
+sudo sed -i -e 's%http://.*.ubuntu.com%http://ftp.jaist.ac.jp/pub/Linux%g' /etc/apt/sources.list
+
 sudo apt update
-sudo apt upgrade
+sudo apt upgrade//めっちゃ時間かかる
+
+//アンインストール
+lxrun /uninstall /full
+lxrun /install
+
 ```
 
  **３. NEologdをインストール**
