@@ -1,6 +1,9 @@
 # Table of contents
 
 * [LeetCode刷题笔记](README.md)
+* [Python\_NLP](python_nlp/README.md)
+  * [WindowsでNEologd辞書](python_nlp/windowsdeneologd.md)
+  * [Untitled](python_nlp/untitled.md)
 * [Regular express](regular-express.md)
 * [Java\_method](java_method.md)
 * [Easy](easy-1/README.md)
