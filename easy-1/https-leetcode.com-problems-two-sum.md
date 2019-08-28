@@ -4,7 +4,7 @@ description: '[2,7,13,19]寻找顺序数组中和为X的两个数，并且给出
 
 # 01. Two Sum
 
-### Two Sum I
+### Two Sum I（非顺序列表）O\(n^2\)
 
 ```java
 class Solution {
@@ -29,7 +29,41 @@ class Solution {
 }
 ```
 
-### Two Sum II
+### The Sum I O\(nlogn\) + O\(n\)
+
+```java
+class Solution {    
+    public int[] twoSum(int[] nums, int target) {
+        
+        int[] dummy = Arrays.copyOf(nums,nums.length);
+        int[] rev = new int[2];
+        Arrays.sort(dummy);//O(nlogn)
+        int left = 0,right = dummy.length-1;
+        
+        while(left < right){
+            int tmp = dummy[left]+dummy[right];
+            if(tmp == target) break;
+            else if(tmp < target) left++;
+            else right--;
+        }
+        
+        for(int i = 0; i < nums.length;i++){
+            if(nums[i] == dummy[left]){
+                rev[0] = i;break;
+            }
+        }
+        for(int j = nums.length-1; j > -1; j --){
+            if(nums[j] == dummy[right]){
+                rev[1] = j;break;
+            }
+        }
+        
+        return rev;
+    }
+}
+```
+
+### Two Sum II \(顺序列表\)
 
 ```javascript
 class Solution {
