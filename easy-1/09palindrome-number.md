@@ -41,7 +41,24 @@ class Solution {
         return (x == vec)||(x == vec/10);  
     }
 }
+```
 
+### MyCode2
 
+```java
+class Solution {
+    public boolean isPalindrome(int x) {
+
+        int rev = 0;
+        if( (x != 0 && x%10 == 0) || x < 0) return false;
+        
+        while(rev <= x){
+            rev = rev*10 + x%10;
+            if( rev == x || rev == x/10) return true;
+            x = x/10;
+        }
+        return false;
+    }
+}
 ```
 
