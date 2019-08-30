@@ -64,6 +64,8 @@ String str = "";
 str = n + "";//产生2个str对象
 //way2
 str = String.valueOf(n);//只产生一个对象
+//way3
+str = Integer.toString(n);//
 ```
 
 String &gt; int
