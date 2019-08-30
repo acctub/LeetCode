@@ -20,6 +20,6 @@
   * [35. Search Insert Position](easy-1/35.-search-insert-position.md)
   * [38. Count and Say](easy-1/38.-count-and-say.md)
   * [168. Excel Sheet Column](easy-1/168.-excel-sheet-column.md)
-
-## easy
+* [Middle](middle/README.md)
+  * [02. Add Two Numbers](middle/02.-add-two-numbers.md)
 
