@@ -2,6 +2,7 @@
 
 * [LeetCode刷题笔记](README.md)
 * [Python\_NLP](python_nlp/README.md)
+  * [Library](python_nlp/library.md)
   * [WindowsでNEologd辞書](python_nlp/windowsdeneologd.md)
   * [Regular express](python_nlp/regular-express.md)
   * [修改环境变量](python_nlp/untitled.md)
