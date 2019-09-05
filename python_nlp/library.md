@@ -78,6 +78,38 @@ url_moji = 'http://kokkai.ndl.go.jp/api/1.0/speech?' + tmp
 #'http://kokkai.ndl.go.jp/api/1.0/speech?日本'
 
 url_mojiをそもまま使えないのでエンコードが必要
+
+```
+
+### re\_method
+
+```python
+#正規表現でいらない部分を置換する
+import re
+string = "1955年（昭和30年）2月27日"
+pattern = "（.+）"
+#正規表現テストサイトhttps://www.regexpal.com/
+text = re.sub(re.compile(pattern, '', string)
+#1955年2月27日
+
+#普通の置換
+string.replace("昭和30年",'')
+#1955年（）2月27日
+```
+
+### テキストファイルの読み込みと書き込み
+
+```python
+path = ""
+#読み込み
+with open(path,mode = 'r',encoding = 'UTF-8') as f:
+    text = f.read()
+    print(text)
+#書き出し
+with open(path,mode = 'w',encoding = 'UTF-8') as f:
+    f.write('\n')
+    f.write("hallo")
+#vscode　変量の名前を一斉に変える方法:ctrl+shift+L
 ```
 
 
