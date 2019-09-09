@@ -112,6 +112,22 @@ with open(path,mode = 'w',encoding = 'UTF-8') as f:
 #vscode　変量の名前を一斉に変える方法:ctrl+shift+L
 ```
 
+### datatime\_method
+
+```python
+#<str>
+date = '1991-01-01'
+#<datatime oj>
+date_ = datetime.datetime.strptime(start+' 12:00:00', '%Y-%m-%d %H:%M:%S')
+#日付の掛け算引き算
+tmp = date_ + datetime.timedelta(days = 31)
+#<datatime　oj> to <str>
+#<str>
+new_date = tmp.strftime('%Y-%m-%d %H:%M:%S').split()[0])
+print(new_date)
+#'1999-02-01'
+```
+
 
 
 
