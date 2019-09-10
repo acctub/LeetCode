@@ -115,6 +115,29 @@ for(Object obj : set){
 //データ保存の順序はないらしい（要確認）
 ```
 
+Hashmap\_contains
+
+```java
+//containsKey
+boolean containsKey(Object key)
+/*如果此映射包含指定键的映射关系，则返回 true。
+更确切地讲，当且仅当此映射包含针对满足
+ (key==null ? k==null : key.equals(k)) 的键 k 的映射关系时，
+ 返回 true。（最多只能有一个这样的映射关系）。 
+*/
+
+
+
+//containsValue
+boolean containsValue(Object value)
+/*如果此映射将一个或多个键映射到指定值，则返回 true。
+更确切地讲，当且仅当此映射至少包含一个对满足 
+(value==null ? v==null : value.equals(v)) 的值 v 的映射关系时，
+返回 true。对于大多数 Map 接口的实现而言，
+此操作需要的时间可能与映射大小呈线性关系。 
+*/
+```
+
 
 
 
