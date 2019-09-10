@@ -91,6 +91,30 @@ Arrays.copyOf(array,end);
 Arrays.sort(array);//quick sort
 ```
 
+HashSet\_travel
+
+```java
+HashSet<Character> set = new HashSet<>();
+set.add('1');set.add('2');
+set.add('3');set.add('4');
+set.add('4');set.add('');
+set.add(null);
+
+//Method 1 using Iterator
+Iterator<Charactor> iter = set.iterator();
+while(iter.hasNext()){
+    System.out.print(iter.next()+ " ");
+}
+//Method 2 using foreach
+for(Object obj : set){
+    System.out.print(obj + " ");
+}
+// output null  1 3 4 2
+//結果から、HashSetは重複する要素を格納せず
+//‘’とnullも格納可能とのことがわかる
+//データ保存の順序はないらしい（要確認）
+```
+
 
 
 

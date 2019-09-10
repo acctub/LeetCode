@@ -6,7 +6,9 @@
   * [WindowsでNEologd辞書](python_nlp/windowsdeneologd.md)
   * [Regular express](python_nlp/regular-express.md)
   * [修改环境变量](python_nlp/untitled.md)
-* [Java\_method](java_method.md)
+* [Java\_Note](java_note/README.md)
+  * [How to make a class](java_note/how-to-make-a-class.md)
+  * [Java\_method](java_note/java_method.md)
 * [Easy](easy-1/README.md)
   * [01. Two Sum](easy-1/https-leetcode.com-problems-two-sum.md)
   * [07. Reverse Interger](easy-1/07reverse-interger.md)
@@ -22,5 +24,6 @@
   * [38. Count and Say](easy-1/38.-count-and-say.md)
   * [168. Excel Sheet Column](easy-1/168.-excel-sheet-column.md)
 * [Middle](middle/README.md)
+  * [03. Longest Substring Without Repeating Characters](middle/03.-longest-substring-without-repeating-characters.md)
   * [02. Add Two Numbers](middle/02.-add-two-numbers.md)
 
