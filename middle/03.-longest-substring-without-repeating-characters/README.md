@@ -185,5 +185,5 @@ public class Solution {
 
 ### 各种数据结构的特征
 
-![](../.gitbook/assets/20170806171443521.jpeg)
+![](../../.gitbook/assets/20170806171443521.jpeg)
 
