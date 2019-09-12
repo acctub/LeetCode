@@ -23,7 +23,9 @@
   * [35. Search Insert Position](easy-1/35.-search-insert-position.md)
   * [38. Count and Say](easy-1/38.-count-and-say.md)
   * [168. Excel Sheet Column](easy-1/168.-excel-sheet-column.md)
+  * [344. Reverse String](easy-1/344.-reverse-string.md)
 * [Middle](middle/README.md)
   * [02. Add Two Numbers](middle/02.-add-two-numbers.md)
   * [03. Longest Substring Without Repeating Characters](middle/03.-longest-substring-without-repeating-characters.md)
+  * [04. Longest Palindromic Substring](middle/untitled.md)
 

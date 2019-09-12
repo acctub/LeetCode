@@ -22,7 +22,7 @@ str0.indexOf(str1)>>
     elif str0 等于 str1 : return 0
         eg. str0 = "app",str1 = "app", str0.indexOf(str1) >> 0
     else : return -1
-        eg. str0 = "app",str1 = "app", str0.indexOf(str1) >> -1
+        eg. str0 = "app",str1 = "bqp", str0.indexOf(str1) >> -1
 ```
 
 String.substring\(start\_idx,end\_idx\)
