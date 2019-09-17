@@ -104,7 +104,41 @@ class Solution {
 */
 ```
 
+Using char List（MostFast）
 
+```java
+public class Solution {
+    public String longestPalindrome(String s) {
+        if (s.length() < 2) {
+            return s;
+        }
+        char[] chars = s.toCharArray();
+        int charlen = chars.length;
+        int max = 0 , start = 0;
+        for(int i = 0 ; i < charlen - max / 2; i ++) {
+            int k = i;
+            int j = i;
+            while(k < charlen - 1 && chars[k] == chars[k + 1]) {
+                k ++;
+            }
+            // After we have scanned duplicate charactor, we don't need to rescan this charactors
+            // if you commit this line, it will use `10ms`
+            // but now, it use `2ms` :)
+            i = k;
+            while(j > 0  && k < charlen - 1 && chars[j - 1] == chars[k + 1]) {
+                j --;
+                k ++;
+            }
+            int len = k - j + 1;
+            if (max <= len){
+                start = j;
+                max = len;
+            }
+        }
+        return s.substring(start, start + max);
+    }
+}
+```
 
 
 
