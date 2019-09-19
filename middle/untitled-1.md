@@ -33,3 +33,15 @@ class Solution {
 }
 ```
 
+```java
+Arrays.asList的用法
+Arrays.asList的作用是将数组转化为list。设置几个值进去，简化代码，省去add的部分。
+
+String[] s = {"aa","bb","cc"};
+List<String> strlist = Arrays.asList(s);
+
+//等同于
+strlist.add("aa");strlist.add("bb");strlist.add("cc");
+
+```
+
