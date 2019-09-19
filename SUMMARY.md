@@ -9,6 +9,7 @@
 * [Java\_Note](java_note/README.md)
   * [How to make a class](java_note/how-to-make-a-class.md)
   * [Java\_method](java_note/java_method.md)
+  * [Vector Class](java_note/vector-class.md)
 * [Easy](easy-1/README.md)
   * [01. Two Sum](easy-1/https-leetcode.com-problems-two-sum.md)
   * [07. Reverse Interger](easy-1/07reverse-interger.md)
@@ -28,4 +29,5 @@
   * [02. Add Two Numbers](middle/02.-add-two-numbers.md)
   * [03. Longest Substring Without Repeating Characters](middle/03.-longest-substring-without-repeating-characters.md)
   * [04. Longest Palindromic Substring](middle/untitled.md)
+  * [15. 3Sum](middle/untitled-1.md)
 
