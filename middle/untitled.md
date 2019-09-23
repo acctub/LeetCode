@@ -64,12 +64,10 @@ Solution-1 Expand Around Center O\(n^2\)
 class Solution {
     public String longestPalindrome(String s) {
         int n = s.length();
-        int start = 0,end = 0;
-        StringBuilder rev = new StringBuilder(s);
-        rev.reverse();
-        
-        if(s.length() == 0) return "";
-        else if(s.equals(rev))  return s;
+        int start = 0,end = -1;//文字列が空の場合s.substring(start,end+1)が間違ってアクセスしないように
+        //StringBuilder rev = new StringBuilder(s);
+        //rev.reverse();
+        //if(s.equals(rev))  return s;
         
         for(int i = 0; i < n; i++){
             int odd = get_sub_len(s,i,i);//奇数
@@ -77,7 +75,7 @@ class Solution {
             int len = Math.max(odd,even);//subStringの本当の長さ
             
             if(len > (end-start)){//長さを更新する必要がある
-                start = i -(len-1)/2;
+                start = i -(len-1)/2;// a[b]ba(len4) & ab[c]ba(len5)
                 end = i + len/2;
             }
         }
