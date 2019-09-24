@@ -31,5 +31,6 @@
   * [02. Add Two Numbers](middle/02.-add-two-numbers.md)
   * [03. Longest Substring Without Repeating Characters](middle/03.-longest-substring-without-repeating-characters.md)
   * [04. Longest Palindromic Substring](middle/untitled.md)
+  * [16.3Sum Closest](middle/16.3sum-closest.md)
   * [15. 3Sum](middle/untitled-1.md)
 

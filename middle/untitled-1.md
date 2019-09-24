@@ -5,32 +5,37 @@ Solution
 ```java
 class Solution {
     public List<List<Integer>> threeSum(int[] nums) {
-        List<List<Integer>> res = new ArrayList<>();
-        Arrays.sort(nums);
-        
-        for (int i = 0; i + 2 < nums.length; i++) {
-            if (i > 0 && nums[i] == nums[i - 1]) {              // skip same result???
-                continue;
-            }
-            int j = i + 1, k = nums.length - 1;  
-            int target = -nums[i];
-            while (j < k) {
-                if (nums[j] + nums[k] == target) {
-                    res.add(Arrays.asList(nums[i], nums[j], nums[k]));
-                    j++;
-                    k--;
-                    while (j < k && nums[j] == nums[j - 1]) j++;  // skip same result
-                    while (j < k && nums[k] == nums[k + 1]) k--;  // skip same result
-                } else if (nums[j] + nums[k] > target) {
-                    k--;
-                } else {
-                    j++;
+        List<List<Integer>> res = new ArrayList<>();//二次元配列の宣言
+        int n = nums.length;
+        Arrays.sort(nums);//Arrays.sort(配列)!!!!ここがポイント！
+        for(int i = 0; i < nums.length;i++){
+            if(i > 0 && nums[i] == nums[i-1])
+                continue;//以降を回さない
+            int tar = -nums[i];
+            for(int j=i+1,k=n-1; j<k; ){
+                if(nums[j]+nums[k]==tar){
+                    res.add(Arrays.asList(nums[i],nums[j++],nums[k--]));
+                    while(j < k && nums[j] == nums[j-1]) j++;//先のステップでj>kの可能性がある
+                    while(j < k && nums[k] == nums[k+1]) k--;
                 }
+                else if(nums[j]+nums[k] > tar) k--;
+                else j++;
             }
         }
         return res;
     }
 }
+/*hint
+STEP1--元の配列を昇順に並べ替える
+STEP2--先頭の数字の負数をtargetにし、後ろから足したらtargetに等しい二つの数字LとRを探す
+LとRの挟む範囲は徐々に縮小し、LのindexがRのを上回ったときloop終了
+[(-4),-1,-1,0,1,2] target=4 L=-1,R=2
+[(-4),-1,-1,0,1,2] target=4 L=0,R=1
+...
+[-4,(-1),-1,0,1,2] target=1 L=-1,R=2 (OK)見つかったらリストに入れる
+[-4,(-1),-1,0,1,2] target=1 L=0,R=1 (OK)
+...
+*/
 ```
 
 ```java
