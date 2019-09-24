@@ -84,6 +84,15 @@ Integer.parseInt("374");//是将字符串解析成int基本类型,返回的是in
 //整数值在 -128到127之间，解析的Integer是同一个对象，不再-128~127之间，数值相同，但地址不同。
 ```
 
+String&gt;char\[\]
+
+```java
+String str = "hello";
+char[] ch = str.toCharArray();
+System.out.print(if(ch instanceof char[]));
+#true
+```
+
 ### Arrays.method
 
 ```text

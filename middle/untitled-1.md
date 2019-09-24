@@ -5,7 +5,7 @@ Solution
 ```java
 class Solution {
     public List<List<Integer>> threeSum(int[] nums) {
-        List<List<Integer>> res = new ArrayList<>();//二次元配列の宣言
+        List<List<Integer>> res = new ArrayList<>();//二次元リストの宣言
         int n = nums.length;
         Arrays.sort(nums);//Arrays.sort(配列)!!!!ここがポイント！
         for(int i = 0; i < nums.length;i++){
