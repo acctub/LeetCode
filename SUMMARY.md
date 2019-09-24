@@ -7,6 +7,7 @@
   * [WindowsでNEologd辞書](python_nlp/windowsdeneologd.md)
   * [Regular express](python_nlp/regular-express.md)
   * [修改环境变量](python_nlp/untitled.md)
+  * [SQLite操作](python_nlp/sqlite-cao-zuo.md)
 * [Java\_Note](java_note/README.md)
   * [How to make a class](java_note/how-to-make-a-class.md)
   * [Java\_method](java_note/java_method.md)
