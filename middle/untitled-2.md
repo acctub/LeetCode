@@ -2,7 +2,7 @@
 description: 将字符串转化为Z形字符串
 ---
 
-# 6. ZigZag Conversion
+# 06. ZigZag Conversion
 
 ```text
 eg:"PAYPALISHIRING"
