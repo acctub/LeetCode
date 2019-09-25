@@ -33,7 +33,7 @@
   * [03. Longest Substring Without Repeating Characters](middle/03.-longest-substring-without-repeating-characters.md)
   * [04. Longest Palindromic Substring](middle/untitled.md)
   * [06. ZigZag Conversion](middle/untitled-2.md)
+  * [08. String to Integer \(atoi\)](middle/8.-string-to-integer-atoi.md)
   * [15. 3Sum](middle/untitled-1.md)
   * [16. 3Sum Closest](middle/16.3sum-closest.md)
-  * [8. String to Integer \(atoi\)](middle/8.-string-to-integer-atoi.md)
 
