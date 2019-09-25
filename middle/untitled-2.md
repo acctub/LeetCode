@@ -1,4 +1,15 @@
+---
+description: 将字符串转化为Z形字符串
+---
+
 # Untitled
+
+```text
+eg:"PAYPALISHIRING"
+P   A   H   N
+A P L S I I G
+Y   I   R
+```
 
 ```java
 class Solution {
@@ -32,5 +43,43 @@ class Solution {
         Matrix.add(lst);
     }
 }
+```
+
+### Solution-1 O\(n\) n == len\(s\)---6ms
+
+```java
+class Solution {
+    public String convert(String s, int numRows) {
+        
+        if (numRows <= 1) return s;
+        
+        List<StringBuilder> rows = new ArrayList<StringBuilder>();
+        StringBuilder ans = new StringBuilder();
+        
+        //因为要将Z字形字符串逐行读取，故此处初始化行数。
+        //一般而言行数等于Z字的横长，但对于s.length()<numRows的情况
+        //行数等于len，因为字符串长度还不够一个Z字的横长。
+        for(int i = 0; i < Math.min(numRows,s.length());i++){
+            rows.add(new StringBuilder());//List->add
+        }
+
+        //设一个布尔量，用于控制写Z字的方向
+        int i = 0;boolean flag = false;//true++ false--
+        
+        //如果写道Z字转角就反向，正向的话i++反向i--
+        for(char c: s.toCharArray()){
+            StringBuilder tmp = rows.get(i);
+            tmp.append(c);
+            if( i == 0 || i == numRows-1) flag = !flag;//boolean reverse
+            i += flag? 1:-1;
+        }
+        
+        for(StringBuilder row : rows){
+            ans.append(row);//StringBuilder->append
+        }
+        return ans.toString();
+    }
+}
+
 ```
 
