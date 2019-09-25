@@ -2,7 +2,7 @@
 description: 将字符串转化为Z形字符串
 ---
 
-# Untitled
+# 6. ZigZag Conversion
 
 ```text
 eg:"PAYPALISHIRING"
@@ -109,5 +109,6 @@ class Solution {
         return ret.toString();
     }
 }
+//根据计算z形字符串所构成的z字最小周期来推演
 ```
 

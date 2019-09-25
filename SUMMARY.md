@@ -34,5 +34,5 @@
   * [04. Longest Palindromic Substring](middle/untitled.md)
   * [15. 3Sum](middle/untitled-1.md)
   * [16. 3Sum Closest](middle/16.3sum-closest.md)
-  * [Untitled](middle/untitled-2.md)
+  * [6. ZigZag Conversion](middle/untitled-2.md)
 
