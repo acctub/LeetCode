@@ -11,36 +11,90 @@ A P L S I I G
 Y   I   R
 ```
 
+### MyCode 15ms
+
 ```java
 class Solution {
     public String convert(String s, int numRows) {
-        s = "PAYPALISHIR"; numRows = 4;
-        List<List<Character>> Matrix = new ArrayList<>();//char的2d列表
-        int n = s.length(), mid = numRows-2;//中间层的长度
+        //s ="PAYPALISHIRING"; numRows = 3;
         
-        for(int i = 0; i < n; i++){
-            if(i < (n-numRows-mid)){
-                add2List(Matrix,s,i,numRows);i += numRows;
-                //此时i跳到中间层的第一个字母位置
-                add2List(Matrix,s,i,mid);i += mid-1;
-            }else if(i < n){
-                add2List(Matrix,s,i,n-i);i = n;
+        if(s.length() < 2 || numRows >= s.length()) return s;
+        
+        List<List<Character>> Matrix = new ArrayList<>();//char的2d列表
+        int n = s.length(),mid = numRows-2;
+        if( n <=2 || numRows == 1)
+            mid = 0;//中间层的长度
+        
+        int looptime = n/(numRows+mid);
+        int extra = n%(numRows+mid);int i = 0;
+        
+        if((numRows+mid) > n) {
+            looptime = 1;
+            extra = 0;
+        }
+        
+        for(int j = 0; j < looptime; j++){
+            add2List(Matrix,s,i,numRows,0);i += numRows;
+            add2List(Matrix,s,i,mid,1);i += mid;
+        }
+        while(extra >= numRows){
+            add2List(Matrix,s,i,numRows,0);
+            extra -= numRows;
+            i += numRows;
+            if(extra > 0){
+                add2List(Matrix,s,i,extra,1);
+                i += extra;
             }
         }
-        return s;
+        if(extra > 0){
+            add2List(Matrix,s,i,extra,2);
+            i += extra;
+        }
+        return conversion(Matrix);
     }
-    public void add2List(List<List<Character>> Matrix,String s,int i, int row){
-        //System.out.print("i="+i+"row="+row);
-        String sub = s.substring(i,i+row);//字符串[文字列]
+    public void add2List(List<List<Character>> Matrix,String s,int i, int row,int flag){
+        String sub = new String();//字符串[文字列]
+        if((i+row)>s.length())
+            sub = s.substring(i,s.length());
+        else
+            sub = s.substring(i,i+row);
+        
+        if(flag == 1){
+            StringBuilder tmp = new StringBuilder(sub);
+            tmp.reverse();
+            sub = tmp.toString();
+            sub = "#"+sub+"#";
+        }
+        else if(flag == 2){
+            List<Character> tmp = Matrix.get(0);
+            while(sub.length() < tmp.size())
+                sub = sub+"#";            
+        }
         char[] ch = sub.toCharArray();//数组[配列]
         List<Character> lst = new ArrayList<>();//列表[リスト]
         //List<Character> lst = Arrays.asList(ch);错误！
         //不能直接把基本数据类型的数组转化为列表
-        for(int q = 0;q < ch.length;q++){
+        for(int q = 0;q < ch.length;q++)
             lst.add(ch[q]);
-        }
-        System.out.println(lst);//java可以直接打印列表
         Matrix.add(lst);
+    }
+    public String conversion(List<List<Character>> Matrix){
+        int n = Matrix.size();       
+        List<Character> m0 = Matrix.get(0);
+        int m = m0.size();
+        StringBuilder ans = new StringBuilder();
+        
+        for(int i = 0; i < m; i++){//循环n次,取Matrix的第i列元素
+            for(int j = 0; j < n;j++){
+                List<Character> tmp = Matrix.get(j);
+                while(tmp.size() < m){
+                    tmp.add(0,'#');     
+                }   
+                if( i < tmp.size() && tmp.get(i) != '#')
+                    ans.append(tmp.get(i));
+            }
+        }
+        return ans.toString();
     }
 }
 ```
