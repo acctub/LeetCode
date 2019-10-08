@@ -9,6 +9,17 @@ $ cd fastText-0.1.0
 $ make
 ```
 
+makeでエラーになったら
+
+```bash
+c++ -pthread -std=c++0x -march=native -O3 -funroll-loops -c src/args.cc
+make: c++: Command not found
+Makefile:22: recipe for target 'args.o' failed
+make: *** [args.o] Error 127
+#g++をインストールしろう
+sudo apt-get install g++
+```
+
 fasttextのpython用のライブラリのインストール
 
 ```bash
