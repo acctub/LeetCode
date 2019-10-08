@@ -5,6 +5,7 @@
   * [Library](python_nlp/library/README.md)
     * [matplotlib.pyplot](python_nlp/library/matplotlib.pyplot.md)
   * [WindowsでNEologd辞書](python_nlp/windowsdeneologd.md)
+  * [WindowsでfastText](python_nlp/windowsdefasttext.md)
   * [Regular express](python_nlp/regular-express.md)
   * [修改环境变量](python_nlp/untitled.md)
   * [SQLite操作](python_nlp/sqlite-cao-zuo/README.md)
