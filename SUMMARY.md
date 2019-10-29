@@ -2,6 +2,7 @@
 
 * [LeetCode刷题笔记](README.md)
 * [Python\_NLP](python_nlp/README.md)
+  * [Scriping](python_nlp/scriping.md)
   * [Library](python_nlp/library/README.md)
     * [matplotlib.pyplot](python_nlp/library/matplotlib.pyplot.md)
   * [WindowsでNEologd辞書](python_nlp/windowsdeneologd.md)
