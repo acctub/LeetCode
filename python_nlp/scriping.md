@@ -27,8 +27,20 @@ driver.quit()
 driver.find_element_by_name()
 #serch by class
 driver.find_element_by_class_name()
+#serch by tag
+driver.find_element_by_tag_name()
+#By Link Text や By Partial Link Text
+# 完全マッチ
+for a in driver.find_elements_by_link_text("このページを訳す"):
+    print(a.get_attribute("href"))
+
+# 部分マッチ
+for a in driver.find_elements_by_partial_link_text("訳す"):
+    print(a.get_attribute("href"))
+    
 #serch by path
 driver.find_element_by_xpath("//*[@id='xxx']")
+driver.find_element_by_xpath("//button")#<button>...</button>という要素を探す
 #Elementもしくは、id, nameの指定が可能
 #属性を取得したいとき
 driver.find_element_by_XXXX.get_attribute("value")
@@ -71,7 +83,14 @@ driver.find_element_by_id("ID").send_keys("strings")
 driver.maximize_window()
 #要素が表示されているかどうかを判定したいとき
 driver.find_element_by_xpath("xpath").is_displayed()
+#screenshorを保存する
+driver.save_screenshot()
 
+
+```
+
+```text
 #参考https://qiita.com/mochio/items/dc9935ee607895420186
+#https://www.seleniumqref.com/
 ```
 
