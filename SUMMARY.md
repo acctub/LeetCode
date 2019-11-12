@@ -1,6 +1,9 @@
 # Table of contents
 
 * [LeetCode刷题笔记](README.md)
+* [OpenCV C++](opencv-c++/README.md)
+  * [Debug](opencv-c++/debug.md)
+  * [Chapter12](opencv-c++/chapter12.md)
 * [Python\_NLP](python_nlp/README.md)
   * [Scriping](python_nlp/scriping.md)
   * [Library](python_nlp/library/README.md)
