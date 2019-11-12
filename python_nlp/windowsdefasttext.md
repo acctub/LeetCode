@@ -28,3 +28,13 @@ $ cd fastText
 $ pip install .
 ```
 
+分散表現辞書を作る
+
+```bash
+$ cd fastText-0.1.0
+./fasttext skipgram -input(分かち書きしたファイル) -output() -dim 次元数() -lr 学習率
+-epoch エポック数
+次元数について、
+文書のサイズに比例して、100,200,300まで(?)設定可能
+```
+
