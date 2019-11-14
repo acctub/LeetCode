@@ -1,10 +1,13 @@
 # Table of contents
 
 * [LeetCode刷题笔记](README.md)
+* [マシンラーニングの筆記](mashinrninguno/README.md)
+  * [混同行列](mashinrninguno/hun-tong-hang-lie.md)
 * [OpenCV C++](opencv-c++/README.md)
   * [Debug](opencv-c++/debug.md)
   * [Chapter12](opencv-c++/chapter12.md)
 * [Python\_NLP](python_nlp/README.md)
+  * [WindowsでMeCab](python_nlp/windowsdemecab.md)
   * [Scriping](python_nlp/scriping.md)
   * [Library](python_nlp/library/README.md)
     * [matplotlib.pyplot](python_nlp/library/matplotlib.pyplot.md)
