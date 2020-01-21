@@ -34,5 +34,10 @@ where not 条件式
 select * from user where　age > 30 and address = 'Osaka';
 # Yamada|32|Osaka
 
+//部分一致する場合like
+//abcXXXX前方一致
+SELECT * FROM テーブル名 WHERE カラム名 LIKE 'abc%'
+//XXXXabc後方一致
+SELECT * FROM テーブル名 WHERE カラム名 LIKE '%abc'
 ```
 
