@@ -13,6 +13,7 @@ class Solution {
         System.out.print("nums.length=");
         System.out.println(nums.length);
         if (nums.length < 2){
+            //throw 例外を意図的に起こし、呼び出し元にエラーメッセージを返す
             throw new IllegalArgumentException("lengths is too short!");
         }
         else{
