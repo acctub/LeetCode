@@ -9,9 +9,10 @@ description: 'https://web.plus-idea.net/2017/02/python2-3-venv-virtualenv/'
 指定するpythonを実行する
 
 ```bash
+py -3#(3系最新版がデフォルトで実行される)
 py -3.6
 py -3.7
-py -2
+py -2#(2系最新版がデフォルトで実行される)
 ```
 
 各バージョンのライブラリの場所を確認
@@ -36,6 +37,13 @@ py -2 -m pip install virtualenv -user
 
 ```bash
 py -3.6 -m virtualenv <filename>
+```
+
+指定するバージョンをデフォルトで実行したい場合
+
+```bash
+set PY_PYTHON=3.6.5
+py -3
 ```
 
 
