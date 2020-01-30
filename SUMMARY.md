@@ -8,6 +8,7 @@
   * [Chapter12](opencv-c++/chapter12.md)
 * [Python\_NLP](python_nlp/README.md)
   * [WindowsでMeCab](python_nlp/windowsdemecab.md)
+  * [複数のpythonバージョンを扱うとき](python_nlp/nopythonbjonwoutoki.md)
   * [Scriping](python_nlp/scriping.md)
   * [Library](python_nlp/library/README.md)
     * [matplotlib.pyplot](python_nlp/library/matplotlib.pyplot.md)
