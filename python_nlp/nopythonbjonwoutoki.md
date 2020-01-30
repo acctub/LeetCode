@@ -4,6 +4,8 @@ description: 'https://web.plus-idea.net/2017/02/python2-3-venv-virtualenv/'
 
 # 複数のpythonバージョンを扱うとき
 
+まず3系をインストールするとき「Add Python to environment variables」はチェックを外しておき、環境変数のPATHにこのバージョンのpython.exeが追加されないようにしておきます。2系をインストールするとき、「Register Extentions」を外すことが重要！
+
 指定するpythonを実行する
 
 ```bash
@@ -28,6 +30,12 @@ pip2.7 install virtualenv -user
 #方法2
 py -2 -m pip install virtualenv -user
 #指定するバージョンのScriptsフォルダに入り、pip -freezeでライブライの状況を確認できる
+```
+
+ヴァーチャル環境の構築
+
+```bash
+py -3.6 -m virtualenv <filename>
 ```
 
 
