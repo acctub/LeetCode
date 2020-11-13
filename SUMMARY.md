@@ -51,4 +51,8 @@
   * [15. 3Sum](middle/untitled-1.md)
   * [16. 3Sum Closest](middle/16.3sum-closest.md)
   * [17. Letter Combinations of a Phone Number](middle/untitled-3.md)
+* [Hard](hard/README.md)
+  * [04. Median of Two Sorted Arrays](hard/04.-median-of-two-sorted-arrays.md)
+
+## Hard <a id="hard-1"></a>
 
