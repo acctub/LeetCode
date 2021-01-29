@@ -42,6 +42,7 @@
   * [168. Excel Sheet Column](easy-1/168.-excel-sheet-column.md)
   * [344. Reverse String](easy-1/344.-reverse-string.md)
 * [Middle](middle/README.md)
+  * [912. Sort an Array](middle/912.-sort-an-array.md)
   * [148. Sort List](middle/148.-sort-list.md)
   * [02. Add Two Numbers](middle/02.-add-two-numbers.md)
   * [03. Longest Substring Without Repeating Characters](middle/03.-longest-substring-without-repeating-characters.md)
