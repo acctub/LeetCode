@@ -14,7 +14,7 @@ class Main {
         Obj.add(2);//OK
         //Cash.add2(2,3);//エラー
       	
-      	Obj obj = new Obj;
+      	Obj obj = new Obj();
       	//メモリ： objの場所をnewして、データ領域でnum1を初期化
       　//（staticメンバーはnewの時初期化されない）
       	System.out.println(obj.num1);
