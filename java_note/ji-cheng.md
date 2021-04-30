@@ -80,3 +80,32 @@ class Bot extends Mid{
 }
 ```
 
+
+
+#### 継承時の制限
+
+　プログラムの構造上クラスの継承は簡単にできてしまうため、継承してほしくないクラスに対して継承を制限する機能が設けられています。
+
+　クラス全体を継承することを制限する場合は、クラス定義にアクセス修飾子finalを付けます。このクラスは継承することができません。
+
+```java
+final class SampleClass { … }
+```
+
+継承は許すものの、特定のメソッドのオーバーライドを制限する場合は、アクセス修飾子finalをメソッド定義に付けます。以下のmyMethod\(\)メソッドはサブクラスでオーバーライドできなくなります。
+
+```java
+class SampleClass {
+    final void myMethod() { … }
+}
+```
+
+またアクセス修飾子privateは名前の通りそのクラスのプライベートなものであることを意味します。privateの付けられたメンバは継承してもサブクラスでは使うことができません。
+
+```java
+class SampleClass {
+    private String name;
+    private void myMethod() { … }
+}
+```
+
