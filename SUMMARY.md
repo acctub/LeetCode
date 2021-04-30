@@ -23,6 +23,7 @@
     * [pythonでの操作](python_nlp/sqlite-cao-zuo/pythondeno.md)
 * [Java\_Note](java_note/README.md)
   * [How to make a class](java_note/how-to-make-a-class.md)
+  * [継承](java_note/ji-cheng.md)
   * [Constructor](java_note/constructor.md)
   * [Static](java_note/static.md)
   * [Class and Instance](java_note/class-and-instance.md)
