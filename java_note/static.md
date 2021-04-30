@@ -59,6 +59,8 @@ class Main {
 }
 
 class Obj{
+  //finalがついてるデータは変えられない。
+  static final String MESSAGE = "HELLO";
   static int num_s = 1;
   int num = 2;
 }
