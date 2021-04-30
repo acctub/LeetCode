@@ -43,3 +43,24 @@ class Obj{
 }
 ```
 
+```java
+class Main {
+    public static void main(String[] args) {
+      Obj.num_s = 10;
+      Obj obj = new Obj();
+      obj.num = 20;
+      //new領域にあるインスタンスの状態で、元のクラスにあるstatic変数の値を帰ると
+      //テキスト領域にあるstatic変数は変えられて、
+      //仮に、new領域にあるインスタンスが消されても、そのstatic変数は変えられたままです。
+      obj.num_s = 100;
+    
+      System.out.print(Obj.num_s+","+obj.num);
+    }
+}
+
+class Obj{
+  static int num_s = 1;
+  int num = 2;
+}
+```
+
