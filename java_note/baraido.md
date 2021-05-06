@@ -38,3 +38,35 @@ class Bot extends Mid{
 //Top:0
 ```
 
+Super obj = new Sub\(\)の場合
+
+```java
+class Main {
+
+    public static void main(String[] args) {
+      Super obj = new Sub();
+      obj.method();
+      obj.func1();
+      //obj.func2();//エラーになる
+    }
+}
+
+class Super{
+  void method(){
+    System.out.println("Super");
+  }
+  void func1(){
+    System.out.println("Func1");
+  }
+}
+
+class Sub extends Super{
+  void method(){
+    System.out.println("Sub");
+  }
+  void func2(){
+    System.out.println("Func2");
+  }
+}
+```
+
