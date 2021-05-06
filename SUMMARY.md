@@ -25,6 +25,7 @@
   * [How to make a class](java_note/how-to-make-a-class.md)
   * [オーバライド](java_note/baraido.md)
   * [継承](java_note/ji-cheng.md)
+  * [ポリモフィズム](java_note/porimofizumu.md)
   * [Constructor](java_note/constructor.md)
   * [Static](java_note/static.md)
   * [Class and Instance](java_note/class-and-instance.md)
