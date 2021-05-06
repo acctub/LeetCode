@@ -45,3 +45,22 @@ class PoSubSample extends PoCalcBaseSample {
 
 ```
 
+#### アップキャストとダウンキャスト
+
+ スーパークラスの型へサブクラスのインスタンスを代入することを**アップキャスト**と呼びます。アップキャストをしても、そのインスタンスの実体はサブクラスのインスタンスのままなので、元のサブクラスの変数に代入して戻すことができます。これを**ダウンキャスト**と呼びます。
+
+```java
+class Animal{}
+class Cat extends Animal {}
+class Dog extends Animal {}
+
+class Main {
+    public static void main(String[] args) {
+        Dog obj1 = new Dog();
+        Animal obj2 = obj1;     // アップキャスト
+        Dog obj3 = (Dog)obj2;   // ダウンキャスト（理論上可能）
+      	Dog obj3 = obj2;   // エラー（だけと危ないので手動にする必要がある）
+    }
+}
+```
+
