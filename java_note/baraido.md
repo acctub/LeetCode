@@ -76,3 +76,5 @@ class Sub extends Super{
 }
 ```
 
+継承関係がなければ、型変換できません。「不適合な型: Super2をSuperに変換できません:」
+
