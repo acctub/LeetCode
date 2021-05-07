@@ -27,6 +27,7 @@
   * [継承](java_note/ji-cheng.md)
   * [コレクション](java_note/korekushon.md)
   * [アクセス制限](java_note/akusesu.md)
+  * [HashMap](java_note/hashmap.md)
   * [ArrayList](java_note/arraylist.md)
   * [ポリモフィズム](java_note/porimofizumu.md)
   * [インターフェース](java_note/intfsu.md)

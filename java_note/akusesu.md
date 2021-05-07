@@ -15,6 +15,7 @@ class Obj{
   protected void print1(){
     System.out.println("Protected");
   }
+  //パッケージ
   public void print2(){
     print3();
     System.out.println("Public");
