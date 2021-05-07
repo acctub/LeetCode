@@ -7,8 +7,6 @@ class Main {
       Obj obj = new Obj();
       obj.print1();obj.print2();obj.print4();
       //obj.print3();
-      Sub obj2 = new Sub();
-      obj2.print5();
       
     }
 }
