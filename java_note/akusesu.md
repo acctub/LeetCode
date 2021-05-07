@@ -33,8 +33,12 @@ class Obj{
 アクセッサメソッド Javaの話じゃない、 通常、Javaではすべてのメンバ変数をprivateに設定します。 変数の値はクラスの外部から不用意に変更されると危険であるためです。 しかし、場合によってはメンバ変数の値を調べたり、外部から値を変えることが一切できなくなってしまいます。 そこで、そのようなアクセスを許可する時だけ、 アクセッサメソッドと呼ばれるものを用意し、他のクラスからのアクセスはアクセッサメソッドを介して行うようにします。
 
 ```java
-class Obj{
-  void print(){
+interface Inter{
+  void print();
+}
+
+class Obj implements Inter{
+  public void print(){
     System.out.println("huhuhu~!");
   }
 }
