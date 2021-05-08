@@ -41,3 +41,28 @@ class Main {
 
 ```
 
+Listのインスタンスを使う場合
+
+```java
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+
+public class Main {
+ 
+    public static void main(String[] args) {    
+        List<Integer> list1 = new ArrayList<Integer>();
+        list1.add(10);
+        list1.add(20);
+        list1.add(30); 
+        // ArrayListからLinkedListへの変換
+        LinkedList<Integer> list2 = new LinkedList<Integer>(list1);
+        for(Integer i : list2) {
+            System.out.println(i);
+        }
+    }
+}
+```
+
+
+

@@ -69,3 +69,7 @@
 
 ## Hard <a id="hard-1"></a>
 
+## TradingView
+
+* [Basic](tradingview/basic.md)
+
