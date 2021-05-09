@@ -6,7 +6,7 @@
 
 //@version=4
 //SMA
-study(title="AT Script", shorttitle="AT Script", overlay=true, resolution="")
+study(title="Acc Script", shorttitle="Acc Script", overlay=true, resolution="")
 plot(sma(close, 5), color=color.blue, title="SMA5", offset=0)
 plot(sma(close, 8), color=color.red, title="SMA8", offset=0)
 plot(sma(close, 13), color=color.orange, title="SMA13", offset=0)
