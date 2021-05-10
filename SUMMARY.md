@@ -26,6 +26,7 @@
   * [オーバライド](java_note/baraido.md)
   * [継承](java_note/ji-cheng.md)
   * [コレクション](java_note/korekushon.md)
+  * [Excepiton](java_note/excepiton.md)
   * [アクセス制限](java_note/akusesu.md)
   * [HashMap](java_note/hashmap.md)
   * [ArrayList](java_note/arraylist.md)
