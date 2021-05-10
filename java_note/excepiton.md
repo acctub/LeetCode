@@ -14,10 +14,13 @@ class Main {
           System.out.println("入力は数値ではない！");
         } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("1つの数値を入力して下さい。");
-        }
+        } finally{
+        	System.out.println("プログラムは終了しました");
+      	}
       System.out.println(222);
     }
 }
+
 ```
 
 catch\(ここでは、例外を発生させる可能性のある**クラス**名を書く\)
