@@ -4,18 +4,18 @@
 
 ```java
 class Main {
-    public static void main(String[] args) {      
+    public static void main(String[] args) {
       System.out.println(args[0]);    
-      if (args.length == 1){
-        try{
+     	try{
           int number = Integer.parseInt(args[0]);
           System.out.println(number);
         } catch (NumberFormatException e){
+          e.printStackTrace();
           System.out.println("入力は数値ではない！");
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("1つの数値を入力して下さい。");
         }
-      }else{
-        System.out.println("１つの数値を入力ください１");
-      }   
+      System.out.println(222);
     }
 }
 ```
