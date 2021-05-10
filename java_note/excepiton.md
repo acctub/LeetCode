@@ -1,5 +1,7 @@
 # Excepiton
 
+今回はInteger.parseInt\(\)メソッドが例外クラスNumberFormatExceptionを発生させる可能性があるので、この例外のための処理をcatchブロック内に記述します。
+
 ```java
 class Main {
     public static void main(String[] args) {      
@@ -17,4 +19,8 @@ class Main {
     }
 }
 ```
+
+catch\(ここでは、例外を発生させる可能性のある**クラス**名を書く\)
+
+ここでの**クラス**は、システムクラスの場合がほとんどだと思われる。
 
