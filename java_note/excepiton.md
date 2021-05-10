@@ -63,3 +63,20 @@ class Main {
 }
 ```
 
+```java
+      //例外を創出する
+      try{
+        throw new Exception("明示的に例外を発生させています");
+      } catch (Exception e){
+        e.printStackTrace();
+      }
+      
+     //Exceptionはクラスだよ、つまり変数を作ることができる
+      try{
+        Exception ex = new Exception ("明示的に例外を発生させています");
+        throw ex;
+      } catch (Exception e){
+        e.printStackTrace();
+      }
+```
+
