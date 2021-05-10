@@ -1,5 +1,7 @@
 # アクセス制限
 
+![&#x30A2;&#x30AF;&#x30BB;&#x30B9;&#x4FEE;&#x98FE;&#x5B50;](../.gitbook/assets/image%20%283%29.png)
+
 ```java
 class Main {
 
