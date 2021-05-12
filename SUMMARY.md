@@ -22,6 +22,7 @@
     * [コマンドラインでの操作](python_nlp/sqlite-cao-zuo/komandoraindeno.md)
     * [pythonでの操作](python_nlp/sqlite-cao-zuo/pythondeno.md)
 * [Java\_Note](java_note/README.md)
+  * [Servlet](java_note/servlet.md)
   * [How to make a class](java_note/how-to-make-a-class.md)
   * [オーバライド](java_note/baraido.md)
   * [継承](java_note/ji-cheng.md)
