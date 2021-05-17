@@ -120,6 +120,7 @@ public class ContactDAO {
 		this.conn = conn;
 	}
 
+	//GET 1 RECORD
 	public ContactDTO getByPrimaryKey(int id) throws SQLException {
 		ContactDTO dto = null;
 		PreparedStatement pstmt = this.conn.prepareStatement(
@@ -135,6 +136,7 @@ public class ContactDAO {
 		return dto;
 	}
 
+	//GET ALL RECORD
 	public List<ContactDTO> getAll() throws SQLException {
 		List<ContactDTO> dtos = new ArrayList<ContactDTO>();
 
@@ -152,6 +154,7 @@ public class ContactDAO {
 		return dtos;
 	}
 
+	//INSERT-----------------------------
 	public void insert(ContactDTO dto) throws SQLException {
 		PreparedStatement pstmt = this.conn.prepareStatement(
 				"INSERT INTO contact VALUES(?,?,?)");
@@ -161,10 +164,9 @@ public class ContactDAO {
 		int rs = pstmt.executeUpdate();
 		System.out.printf("Table <contact>: %d Data Inserted! >>", rs);
 	}
-	
-	//ここで、RuntimeExceptionを書いても書かなくてもOK,
-	//書かなくてもRuntimeExceptionが暗黙的に発動する
-	public int update(ContactDTO dto) throws SQLException, RuntimeException {
+
+	//UPDATE-----------------------------
+	public int update(ContactDTO dto) throws SQLException {
 		PreparedStatement pstmt = this.conn.prepareStatement(
 				"UPDATE contact SET extension=?, mobile=? WHERE id = ?");
 		pstmt.setInt(3, dto.getId());
@@ -172,28 +174,23 @@ public class ContactDAO {
 		pstmt.setString(2, dto.getMobile());
 		int count = pstmt.executeUpdate();
 		if (count != 1) {
-			//参照元のテーブルに、参照先の主キーに存在するidを挿入、削除しようとする場合、
-			//該当idが参照元テーブルに存在しない場合は、pstmt.executeUpdate()の戻り値は0で
-			//エラーにならない。
-			//しかし実はエラーなので以下のエラーを意図的に作る。
-			throw new RuntimeException("Update Failed! >指定されたIDのレコードが存在しません。");
+			//System.out.print("Update Failed! >指定されるIDが存在しません。>");
+			throw new RuntimeException(String.format("Update Failed! >ID<%d>が存在しません。", dto.getId()));
 		} else {
 			System.out.print("Table <contact>: Data Updated! >>");
 		}
-		//参照元のテーブルに、参照先の主キーに存在しないidを挿入、削除しようとする場合、
-		//pstmt.executeUpdate()の段階でエラーになる。
-		//Key (id)=(xxx) is not present in table "AAA".のエラーが出る。
 		return count;
 	}
 
-	public int delete(ContactDTO dto) throws SQLException, RuntimeException {
+	//DELETE-----------------------------
+	public int delete(ContactDTO dto) throws SQLException {
 		PreparedStatement pstmt = this.conn.prepareStatement(
 				"DELETE FROM contact WHERE id = ?");
 		pstmt.setInt(1, dto.getId());
 		int count = pstmt.executeUpdate();
 		if (count != 1) {
-			
-			throw new RuntimeException("Update Failed! >指定されたIDのレコードが存在しません。");
+			//System.out.print("Update Failed! >指定されるIDが存在しません。>");
+			throw new RuntimeException(String.format("Update Failed! >ID<%d>が存在しません。", dto.getId()));
 		} else {
 			System.out.print("Table <contact>: Data Updated! >>");
 		}
