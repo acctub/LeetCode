@@ -40,18 +40,16 @@ public class ContactDAOUse2 {
 			dto = setDTOValue(102, 9999, "090-444-4444");
 			dao.delete(dto);
 			print(dto, true);
-			//二度の削除-->エラー
-			dao.delete(dto);
-			print(dto, true);
+			//二度目の削除（エラーテスト）
+			//dao.delete(dto);
+			//存在しない（主キー制約ではない）（エラーテスト）
+			//dao.update(dto);
 
 			//挿入と確認
 			dao.insert(dto);
 			print(dao.getByPrimaryKey(102), true);
-
-			//挿入と確認2
-			//			dto = setDTOValue(104, 4004, "090-3233-6666");
-			//			dao.insert(dto);
-			//			print(dao.getByPrimaryKey(104), true);
+			//二度目の挿入（エラーテスト）
+			//dao.insert(dto);
 
 			//変更と確認１
 			dto = setDTOValue(102, 4002, "090-3333-6666");
