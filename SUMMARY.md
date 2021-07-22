@@ -7,6 +7,7 @@
   * [Debug](opencv-c++/debug.md)
   * [Chapter12](opencv-c++/chapter12.md)
 * [Python\_NLP](python_nlp/README.md)
+  * [Game Crit Rate](python_nlp/game-crit-rate.md)
   * [Jupyter Notebook](python_nlp/jupyter-notebook.md)
   * [WindowsでMeCab](python_nlp/windowsdemecab.md)
   * [\_\_main\_\_変数の意味](python_nlp/mainno.md)
